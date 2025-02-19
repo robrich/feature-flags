@@ -1,0 +1,20 @@
+# downloaded files
+node_modules
+# built files
+bin
+obj
+dist
+coverage
+# user-specific files
+package-lock.json
+*.user
+.vs
+*.db*
+.vite
+# temp files
+.DS_Store
+*.orig
+# secrets
+# .env is checked in so we have examples
+# except chapter 4
+04-*/**/.env
