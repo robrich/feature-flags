@@ -25,8 +25,8 @@ router.get('/feature2', async function (req: Request, res: Response) {
 });
 
 router.get('/feature3', async function (req: Request, res: Response) {
-  const feature3 = await getFlag(FeatureFlags.THREE);
-  res.json({feature3});
+  const THREE = await getFlag(FeatureFlags.THREE);
+  res.json({THREE});
 });
 
 router.get('/all', async function (req: Request, res: Response) {

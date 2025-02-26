@@ -24,15 +24,15 @@ router.get('/feature2', function (req: Request, res: Response) {
 });
 
 router.get('/feature3', function (req: Request, res: Response) {
-  const feature3 = getFlag(FeatureFlags.THREE);
-  res.json({feature3});
+  const THREE = getFlag(FeatureFlags.THREE);
+  res.json({THREE});
 });
 
 router.get('/all', function (req: Request, res: Response) {
-  const feature1 = getFlag(FeatureFlags.ONE);
-  const feature2 = getFlag(FeatureFlags.TWO);
-  const feature3 = getFlag(FeatureFlags.THREE);
-  res.json({feature1, feature2, feature3});
+  const ONE = getFlag(FeatureFlags.ONE);
+  const TWO = getFlag(FeatureFlags.TWO);
+  const THREE = getFlag(FeatureFlags.THREE);
+  res.json({ONE, TWO, THREE});
 });
 
 // FRAGILE: may leak corporate IP

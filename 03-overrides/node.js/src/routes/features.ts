@@ -28,8 +28,8 @@ router.get('/feature2', async function (req: Request, res: Response) {
 
 router.get('/feature3', async function (req: Request, res: Response) {
   const name = req.query.name as string | undefined;
-  const feature3 = await getFlag(FeatureFlags.THREE, name);
-  res.json({feature3});
+  const THREE = await getFlag(FeatureFlags.THREE, name);
+  res.json({name, THREE});
 });
 
 router.get('/all', async function (req: Request, res: Response) {
