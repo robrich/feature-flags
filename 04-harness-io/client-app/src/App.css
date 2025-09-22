@@ -10,3 +10,7 @@
   border: 1px solid #cccccc;
   border-radius: .5em;
 }
+
+.flag {
+  width: 200px;
+}

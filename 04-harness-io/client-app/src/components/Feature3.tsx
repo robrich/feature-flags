@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useFeatureFlags } from '@/hooks/useFeatureFlags';
 
 
-const Feature2 = memo(function () {
+const Feature3 = memo(function () {
   const { flags } = useFeatureFlags();
 
   return (
@@ -13,13 +13,13 @@ const Feature2 = memo(function () {
         ? (
           <div>
             <p>Welcome to the beta channel!</p>
-            <img src="/vite.svg" />
+            <img className="flag" src="/ca.svg" />
           </div>
         )
-        : (<div><img src="/react.svg" /></div>)
+        : (<div><img className="flag" src="/ca-ontario.svg" /></div>)
       }
     </>
   );
 });
 
-export default Feature2;
+export default Feature3;
