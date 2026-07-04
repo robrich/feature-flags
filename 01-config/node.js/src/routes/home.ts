@@ -1,5 +1,4 @@
-import Router from 'express-promise-router';
-import { Request, Response } from 'express';
+import { type Request, type Response, Router } from 'express';
 
 
 const router = Router();

@@ -14,7 +14,9 @@ package-lock.json
 # temp files
 .DS_Store
 *.orig
+TestResults
+test-results
 # secrets
 # .env is checked in so we have examples
-# except chapter 4
-04-*/**/.env
+# except chapter 5
+05-*/**/.env

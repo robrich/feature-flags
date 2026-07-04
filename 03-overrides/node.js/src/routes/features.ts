@@ -1,5 +1,4 @@
-import Router from 'express-promise-router';
-import { Request, Response } from 'express';
+import { type Request, type Response, Router } from 'express';
 import getFlag, { getAllFlags } from '../data/feature-flag-repository.js';
 import { FeatureFlags } from '../types/feature-flag.js';
 

@@ -4,6 +4,7 @@ namespace FeatureFlagFromConfig.Controllers;
 [Route("features")]
 public class FeaturesController(AppSettings appSettings, IConfiguration configuration) : ControllerBase
 {
+
 	[HttpGet("feature1")]
 	public ActionResult Feature1()
     {

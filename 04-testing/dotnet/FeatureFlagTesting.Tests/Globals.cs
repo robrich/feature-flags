@@ -1,0 +1,13 @@
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.ModelBinding;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using AutoFixture;
+global using AutoFixture.AutoNSubstitute;
+global using NSubstitute;
+global using Shouldly;
+global using Xunit;
+global using FeatureFlagTesting.Controllers;
+global using FeatureFlagTesting.Data;
+global using FeatureFlagTesting.Tests.Fixtures;
+global using FeatureFlagTesting.Models;

@@ -1,5 +1,4 @@
-import Router from 'express-promise-router';
-import { Request, Response } from 'express';
+import { type Request, type Response, Router } from 'express';
 import getFlag, { getAllFlags, FeatureFlags } from '../utils/features.js';
 
 
@@ -15,8 +14,8 @@ router.get('/feature1', function (req: Request, res: Response) {
 });
 
 router.get('/feature2', function (req: Request, res: Response) {
-  const feature1 = getFlag(FeatureFlags.TWO);
-  if (feature1) {
+  const feature2 = getFlag(FeatureFlags.TWO);
+  if (feature2) {
     res.json({message: 'Feature 2 outputs json when enabled'});
   } else {
     res.send('Feature 2 outputs text when disabled');
